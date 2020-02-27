@@ -1,43 +1,34 @@
 import React, { Component } from 'react';
 
 class Board extends Component {
-  state = { 
-    rows : [1,2,3,4,5,6,7,8] ,
-    cols : ["A","B","C","D","E","F","G","H"]
+  state = {
+    rows: [1, 2, 3, 4, 5, 6, 7, 8],
+    cols: ["A", "B", "C", "D", "E", "F", "G", "H"]
   }
-  
-  // style = {
-  //   darkCell : "darkCell" ,
-  //   lightCell : "lightCell"
-  // }
 
   makeBoard(rows, cols) {
-
-    const board = rows.map( row => {
-      cols.map( col => {
-        console.log(col + row);
+    const board = []
+    rows.map(row => {
+      cols.map(col => {
+        board.push(row + col)
       })
     })
-    return board
+    return board;
   }
-  
+
   render() {
-    console.log(this.state.rows)
+    const board = this.makeBoard(this.state.rows, this.state.cols);
 
-    
-
-    this.makeBoard(this.state.rows, this.state.cols)
     return (
-
-      
-
       <div>
-        {/* {rows, cols = this.state} */}
-          <h1>board</h1>
+        {
+          board.map(cell => {
+            return <div>{cell}</div>
+          })
+        }
       </div>
-      
-      );
-    }
+    );
   }
-  
-  export default Board;
+}
+
+export default Board;
