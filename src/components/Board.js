@@ -5,30 +5,36 @@ class Board extends Component {
     rows: [1, 2, 3, 4, 5, 6, 7, 8],
     cols: ["A", "B", "C", "D", "E", "F", "G", "H"]
   }
-
+  
   makeBoard(rows, cols) {
     const board = []
-    cols.map(row => {
-      rows.map(col => {
-        board.push(col + row)
+    rows.map(row => {
+      cols.map(col => {
+        board.push(row + col)
       })
     })
+    
     return board;
   }
-
+  
   render() {
+  
     const board = this.makeBoard(this.state.cols, this.state.rows);
-
+  
     return (
       <div id="board">
-        {
-          board.map(cell => {
-            return <div className={cell}></div>
-          })
-        }
+      {
+  
+        board.map( (cell, i) => {
+  
+          return <div key={i} id={cell}></div>
+  
+        })
+      }
       </div>
-    );
+      );
+  
+    }
   }
-}
-
-export default Board;
+  
+  export default Board;
