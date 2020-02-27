@@ -18,6 +18,19 @@ html, body{
 	align-items: center;
 	justify-content: center;
 	transform-style: preserve-3d;
+	flex-wrap: nowrap;
+	flex-direction: column-reverse;
+	transform: rotateX(45deg) rotateZ(45deg) perspective(9cm);
+	overflow: hidden;
+}
+
+#data, #ui, #board{
+	width: 30%;
+	height: 100%;
+}
+
+#data{
+
 }
 
 #board{
@@ -27,7 +40,6 @@ html, body{
 	grid-gap: 0;
 	margin: 0;
 	padding: 0;  
-	transform: rotateX(45deg) rotateZ(45deg) perspective(4cm);
 }
 
 #board li{
@@ -69,6 +81,10 @@ html, body{
 #board li.active{
 	background: #97F;
 	transition: 0.3s all ease-in;
+}
+
+#ui{
+
 }
 
 .piece{

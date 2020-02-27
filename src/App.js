@@ -8,6 +8,7 @@ function App() {
 
     <div id="data">
       <h1>01. Pawn </h1>
+      <p>Acá abajo</p>
     </div>
     
     <ul id="board">
@@ -116,11 +117,11 @@ function App() {
       
       </div>
 
+    </ul>
+
     <div id="ui">
       <h2>This is some extra information</h2>
     </div>
-
-    </ul>
 
   </div>
 
