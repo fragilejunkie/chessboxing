@@ -6,13 +6,35 @@ class Board extends Component {
     cols : ["A","B","C","D","E","F","G","H"]
   }
   
-  style = {
-    darkCell : "darkCell" ,
-    lightCell : "lightCell"
+  // style = {
+  //   darkCell : "darkCell" ,
+  //   lightCell : "lightCell"
+  // }
+
+  makeBoard(rows, cols) {
+
+    const board = rows.map( row => {
+      cols.map( col => {
+        console.log(col + row);
+      })
+    })
+    return board
   }
   
   render() {
+    console.log(this.state.rows)
+
+    
+
+    this.makeBoard(this.state.rows, this.state.cols)
     return (
+
+      
+
+      <div>
+        {/* {rows, cols = this.state} */}
+          <h1>board</h1>
+      </div>
       
       );
     }
