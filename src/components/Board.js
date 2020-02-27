@@ -27,7 +27,7 @@ class Board extends Component {
   
         board.map( (cell, i) => {
   
-          return <div key={i} id={cell}></div>
+          return <div key={i} id={cell} className="cell"></div>
   
         })
       }

@@ -113,20 +113,19 @@ html, body{
   background: #333;
 }
 
-#board .row li:hover, #board .row:nth-child(odd) li:nth-child(2n+0):hover, #board .row:nth-child(even) li:nth-child(2n+1):hover{
+#board .cell[id^="A"]:nth-child(2n+1), #board .cell[id^="C"]:nth-child(2n+1), #board .cell[id^="E"]:nth-child(2n+1), #board .cell[id^="G"]:nth-child(2n+1) {
+	background: #333;
+}
+
+#board .cell[id^="B"]:nth-child(2n+0), #board .cell[id^="D"]:nth-child(2n+0), #board .cell[id^="F"]:nth-child(2n+0), #board .cell[id^="H"]:nth-child(2n+0) {
+  background: #333;
+}
+
+#board .cell:hover, #board .cell[id^="A"]:nth-child(2n+1):hover, #board .cell[id^="C"]:nth-child(2n+1):hover, #board .cell[id^="E"]:nth-child(2n+1):hover, #board .cell[id^="G"]:nth-child(2n+1):hover, #board .cell[id^="B"]:nth-child(2n+0):hover, #board .cell[id^="D"]:nth-child(2n+0):hover, #board .cell[id^="F"]:nth-child(2n+0):hover, #board .cell[id^="H"]:nth-child(2n+0):hover {
 	transition: 0s all ease-out;
 	background: #F70;
 	cursor: pointer;
 }
-
-#board .row:nth-child(odd) li:nth-child(2n+0){
-  background: #333;
-}
-
-#board .row:nth-child(even) li:nth-child(2n+1){
-  background: #333;
-}
-
 
 #board li.active{
 	background: #97F;
