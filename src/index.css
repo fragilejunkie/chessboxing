@@ -2,45 +2,106 @@ html, body{
 	margin: 0;
 	padding: 0;
 	font-family: 'Nunito', Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	color: #333;
 	background: #FAFAFA;
 	height: 100vh;
 	width: 100vw;
 }
 
+#root{
+	overflow: hidden;
+	display:flex;
+    align-items: center;
+    justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
 #content{
-	height: 100vh;
-	width: 100vw;
+	height: fit-content;
+	width: 48vw;
 	display: flex;
 	margin: 0;
-	padding: 0;
-	align-items: center;
-	justify-content: center;
 	transform-style: preserve-3d;
+	box-shadow: 10px 0 10px rgba(0,0,0,0.05);
+	flex-wrap: nowrap;
+	flex-direction: column-reverse;
+    transform: rotateX(45deg) rotateZ(45deg) rotateY(-5deg) perspective(90cm) scale(0.75);
+}
+
+#data, #ui, #board{
+	width: 48vw;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+	text-align: left;
+}
+
+#data{
+	z-index: 99;
+	height: fit-content;
+}
+
+#data h1{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 2.5rem;
+	margin: .5em 0;
+	padding: 0 0 .5em .5em;
+	border-bottom: 1px solid #CCC;
+}
+
+#data p{
+	padding: 0 0 .5em 1rem;
+}
+
+#data #subData{
+	display: flex;
+	flex-direction: row;
+}
+
+#data #subData p{
+	width: 50%;
+}
+
+#data #subData p:nth-child(odd){
+	font-weight: bold;
+	align: right;
+	color: #797;
+}
+
+#data #subData p:nth-child(even){
+	font-weight: bold;
+	align: right;
+	color: #433;
 }
 
 #board{
+	height: 80vh;
+	width: 100%;
 	list-style-type: none;  
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	grid-gap: 0;
 	margin: 0;
 	padding: 0;  
-	transform: rotateX(45deg) rotateZ(45deg) perspective(4cm);
+	z-index: 0;
 }
 
-#board li{
+#board .row{
 	display: flex;
-	height: 10vh;
-	width: 10vh;
+	flex-direction: column;
+}
+
+#board .row li{
+	display: flex;
+	flex-grow: 1;
 	transition: 0.4s all ease-out;
 	align-items: center;
 	justify-content: center;
 	background: #fff;
 }
 
-#board li.darkbackground {
+#board .rowli.darkbackground {
   background: #333;
 }
 
@@ -69,6 +130,14 @@ html, body{
 #board li.active{
 	background: #97F;
 	transition: 0.3s all ease-in;
+}
+
+#ui{
+	background: #797;
+	color: #fafafa;
+	z-index: 99;
+	padding: 0 0 .5em 1rem;
+	width: calc(100% - 1em)
 }
 
 .piece{
