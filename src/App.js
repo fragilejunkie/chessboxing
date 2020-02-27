@@ -5,112 +5,120 @@ function App() {
   return (
 
   <div id="content">
+
+    <div id="data">
+      <h1>01. Pawn </h1>
+    </div>
     
     <ul id="board">
       
-      <div class="row">
+      <div className="row">
 
-        <li class="position1"> <img src="../img/pawn.svg" alt="Autochess Piece" /> </li>
-        <li class="position2"></li>
-        <li class="position3"></li>
-        <li class="position4"></li>
-        <li class="position5"></li>
-        <li class="position6"></li>
-        <li class="position7"></li>
-        <li class="position8"></li>
+        <li className="position1"> <img src="../img/pawn.svg" alt="Autochess Piece" /> </li>
+        <li className="position2"></li>
+        <li className="position3"></li>
+        <li className="position4"></li>
+        <li className="position5"></li>
+        <li className="position6"></li>
+        <li className="position7"></li>
+        <li className="position8"></li>
 
       </div>
 
-      <div class="row">
+      <div className="row">
 
-        <li class="position9"></li>
-        <li class="position10"></li>
-        <li class="position11"></li>
-        <li class="position12"></li>
-        <li class="position13"></li>
-        <li class="position14"></li>
-        <li class="position15"></li>
-        <li class="position16"></li>
+        <li className="position9"></li>
+        <li className="position10"></li>
+        <li className="position11"></li>
+        <li className="position12"></li>
+        <li className="position13"></li>
+        <li className="position14"></li>
+        <li className="position15"></li>
+        <li className="position16"></li>
       
       </div>
 
-      <div class="row">
+      <div className="row">
 
-        <li class="position17"></li>
-        <li class="position18"></li>
-        <li class="position19"></li>
-        <li class="position20"></li>
-        <li class="position21"></li>
-        <li class="position22"></li>
-        <li class="position23"></li>
-        <li class="position24"></li>
+        <li className="position17"></li>
+        <li className="position18"></li>
+        <li className="position19"></li>
+        <li className="position20"></li>
+        <li className="position21"></li>
+        <li className="position22"></li>
+        <li className="position23"></li>
+        <li className="position24"></li>
       
       </div>
 
-      <div class="row">
+      <div className="row">
 
-        <li class="position25"></li>
-        <li class="position26"></li>
-        <li class="position27"></li>
-        <li class="position28"></li>
-        <li class="position29"></li>
-        <li class="position30"></li>
-        <li class="position31"></li>
-        <li class="position32"></li>
+        <li className="position25"></li>
+        <li className="position26"></li>
+        <li className="position27"></li>
+        <li className="position28"></li>
+        <li className="position29"></li>
+        <li className="position30"></li>
+        <li className="position31"></li>
+        <li className="position32"></li>
       
       </div>
 
-      <div class="row">
+      <div className="row">
 
-        <li class="position33"></li>
-        <li class="position34"></li>
-        <li class="position35"></li>
-        <li class="position36"></li>
-        <li class="position37"></li>
-        <li class="position38"></li>
-        <li class="position39"></li>
-        <li class="position40"></li>
+        <li className="position33"></li>
+        <li className="position34"></li>
+        <li className="position35"></li>
+        <li className="position36"></li>
+        <li className="position37"></li>
+        <li className="position38"></li>
+        <li className="position39"></li>
+        <li className="position40"></li>
       
       </div>
 
-      <div class="row">
+      <div className="row">
 
-        <li class="position41"></li>
-        <li class="position42"></li>
-        <li class="position43"></li>
-        <li class="position44"></li>
-        <li class="position45"></li>
-        <li class="position46"></li>
-        <li class="position47"></li>
-        <li class="position48"></li>
+        <li className="position41"></li>
+        <li className="position42"></li>
+        <li className="position43"></li>
+        <li className="position44"></li>
+        <li className="position45"></li>
+        <li className="position46"></li>
+        <li className="position47"></li>
+        <li className="position48"></li>
       
       </div>
 
-      <div class="row">
+      <div className="row">
 
-        <li class="position49"></li>
-        <li class="position50"></li>
-        <li class="position51"></li>
-        <li class="position52"></li>
-        <li class="position53"></li>
-        <li class="position54"></li>
-        <li class="position55"></li>
-        <li class="position56"></li>
+        <li className="position49"></li>
+        <li className="position50"></li>
+        <li className="position51"></li>
+        <li className="position52"></li>
+        <li className="position53"></li>
+        <li className="position54"></li>
+        <li className="position55"></li>
+        <li className="position56"></li>
       
       </div>
 
-      <div class="row">
+      <div className="row">
 
-        <li class="position57"></li>
-        <li class="position58"></li>
-        <li class="position59"></li>
-        <li class="position60"></li>
-        <li class="position61"></li>
-        <li class="position62"></li>
-        <li class="position63"></li>
-        <li class="position64"></li>
+        <li className="position57"></li>
+        <li className="position58"></li>
+        <li className="position59"></li>
+        <li className="position60"></li>
+        <li className="position61"></li>
+        <li className="position62"></li>
+        <li className="position63"></li>
+        <li className="position64"></li>
       
       </div>
+
+    <div id="ui">
+      <h2>This is some extra information</h2>
+    </div>
 
     </ul>
 
