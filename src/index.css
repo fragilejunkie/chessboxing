@@ -153,6 +153,10 @@ html, body{
 	width: calc(100% - 1em)
 }
 
+#ui.alert{
+	background: #F70;
+}
+
 .piece{
 	display: flex;
 	border-radius: 50%;

@@ -1,19 +1,13 @@
 import React from 'react';
 import './App.css';
 
-import Notifications from './components/Notifications';
-import Board from './components/Board';
-import Info from './components/Info';
+import Chess from './components/Chess';
 
 
 function App() {
   
   return (
-    <div id="content">
-      <Info />
-      <Board />
-      <Notifications />
-    </div>
+    <Chess />
   );
 }
 

@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function Notifications() {
-  return (
-    <div id="ui">
-      <h2>This is some extra information</h2>
+class Notifications extends Component {
+  state = { notificationMessage : "This is working" }
+
+  styles = { notificationStyle : "alert" }
+
+  render() {
+    return (
+      <div id="ui" className={this.styles.notificationStyle}>
+      <h2>{this.state.notificationMessage}</h2>
     </div>
-  )
+    );
+  }
 }
 
 export default Notifications;
