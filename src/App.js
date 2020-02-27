@@ -7,7 +7,7 @@ function App() {
   <div id="content">
 
     <div id="data">
-      <h1>01. Pawn </h1>
+      <h1><strong>E-1</strong> Pawn </h1>
       <p>Acá abajo va bastante más información, sobre por ejemplo, porque sirve este personaje.</p>
       <div id="subData">
         <p>MOV</p><p>1</p>

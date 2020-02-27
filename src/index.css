@@ -65,13 +65,13 @@ html, body{
 
 #data #subData p:nth-child(odd){
 	font-weight: bold;
-	align: right;
+	text-align: right;
 	color: #797;
 }
 
 #data #subData p:nth-child(even){
 	font-weight: bold;
-	align: right;
+	text-align: right;
 	color: #433;
 }
 
