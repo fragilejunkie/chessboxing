@@ -100,12 +100,7 @@ html, body{
 	z-index: 0;
 }
 
-#board .row{
-	display: flex;
-	flex-direction: column;
-}
-
-#board .row li{
+#board .cell{
 	display: flex;
 	flex-grow: 1;
 	transition: 0.4s all ease-out;
@@ -114,15 +109,8 @@ html, body{
 	background: #fff;
 }
 
-#board .rowli.darkbackground {
+#board .cell.darkbackground {
   background: #333;
-}
-
-#board .row li img{
-	width: 100%;
-    transform: rotate3d(-0.5,0,5,-45deg) perspective(10cm);
-    padding-bottom: 25%;
-    height: 100%;
 }
 
 #board .row li:hover, #board .row:nth-child(odd) li:nth-child(2n+0):hover, #board .row:nth-child(even) li:nth-child(2n+1):hover{

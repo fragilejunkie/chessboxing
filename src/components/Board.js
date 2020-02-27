@@ -8,22 +8,22 @@ class Board extends Component {
 
   makeBoard(rows, cols) {
     const board = []
-    rows.map(row => {
-      cols.map(col => {
-        board.push(row + col)
+    cols.map(row => {
+      rows.map(col => {
+        board.push(col + row)
       })
     })
     return board;
   }
 
   render() {
-    const board = this.makeBoard(this.state.rows, this.state.cols);
+    const board = this.makeBoard(this.state.cols, this.state.rows);
 
     return (
-      <div>
+      <div id="board">
         {
           board.map(cell => {
-            return <div>{cell}</div>
+            return <div className={cell}></div>
           })
         }
       </div>
