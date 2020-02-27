@@ -71,7 +71,7 @@ html, body{
 
 #data #subData p:nth-child(even){
 	font-weight: bold;
-	text-align: right;
+	text-align: left;
 	color: #433;
 }
 
