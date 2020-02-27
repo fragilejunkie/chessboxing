@@ -10,7 +10,7 @@ class Board extends Component {
     const board = []
     rows.map(row => {
       cols.map(col => {
-        board.push(row + col)
+        board.push(row + "-" + col)
       })
     })
     
