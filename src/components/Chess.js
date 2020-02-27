@@ -6,25 +6,23 @@ import Info from './Info';
 
 class Chess extends Component {
   state = {
-    position : null
+    position: null
   }
 
   handleClick = (e) => {
-    const boardCell = e.target.id;
-    this.setState({position : e.target.id})
-    console.log(this.state.position)
+    this.setState({ position: e.target.id })
   }
 
   render() {
     return (
       <div id="content">
-      <Info  position={this.state.position}/>
-      <Board handleClick={this.handleClick} />
-      <Notifications />
+        <Info position={this.state.position} />
+        <Board activeCell={this.state.position} handleClick={this.handleClick} />
+        <Notifications />
       </div>
-      );
-      
-    }
+    );
+
   }
+}
 
 export default Chess;
