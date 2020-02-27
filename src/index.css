@@ -1,7 +1,7 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Nunito', Helvetica, Arial, sans-serif;
+	font-family: 'Merriweather', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	color: #333;
 	background: #FAFAFA;
@@ -65,6 +65,7 @@ html, body{
 
 #data p{
 	padding: 0 0 .5em 1rem;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 #data #subData{
@@ -74,6 +75,8 @@ html, body{
 
 #data #subData p{
 	width: 50%;
+	font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+
 }
 
 #data #subData p:nth-child(odd){
