@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+	background: #FAFAFA;
+	height: 100vh;
+	width: 100vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#content{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	transform-style: preserve-3d;
+}
+
+#board{
+	list-style-type: none;  
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 0;
+	margin: 0;
+	padding: 0;  
+	transform: rotateX(45deg) rotateZ(45deg) perspective(4cm);
+}
+
+#board li{
+	display: flex;
+	height: 10vh;
+	width: 10vh;
+	transition: 0.4s all ease-out;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+}
+
+#board li.darkbackground {
+  background: #333;
+}
+
+#board .row li img{
+	width: 100%;
+    transform: rotate3d(-0.5,0,5,-45deg) perspective(10cm);
+    padding-bottom: 25%;
+    height: 100%;
+}
+
+#board .row li:hover, #board .row:nth-child(odd) li:nth-child(2n+0):hover, #board .row:nth-child(even) li:nth-child(2n+1):hover{
+	transition: 0s all ease-out;
+	background: #F70;
+	cursor: pointer;
+}
+
+#board .row:nth-child(odd) li:nth-child(2n+0){
+  background: #333;
+}
+
+#board .row:nth-child(even) li:nth-child(2n+1){
+  background: #333;
+}
+
+
+#board li.active{
+	background: #97F;
+	transition: 0.3s all ease-in;
+}
+
+.piece{
+	display: flex;
+	border-radius: 50%;
+	background: #666;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+	height: 40%;
+	width: 40%;
 }
