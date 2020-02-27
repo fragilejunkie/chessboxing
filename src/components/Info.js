@@ -3,7 +3,9 @@ import React from 'react';
 function Info() {
   return (
     <div id="data">
-      <h1>01. Pawn </h1>
+      <div className="dataTitle">
+        <h3 className="position">E1-A1</h3><h1>Pawn </h1>
+      </div>
       <p>Acá abajo va bastante más información, sobre por ejemplo, porque sirve este personaje.</p>
       <div id="subData">
         <p>MOV</p><p>1</p>
