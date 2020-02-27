@@ -17,23 +17,24 @@ class Board extends Component {
     return board;
   }
   
+  
   render() {
-  
+    
     const board = this.makeBoard(this.state.cols, this.state.rows);
-  
+    
     return (
       <div id="board">
       {
-  
+        
         board.map( (cell, i) => {
-  
-          return <div key={i} id={cell} className="cell"></div>
-  
+          
+          return <div key={cell} id={cell} className="cell" onClick={this.props.handleClick}></div>
+          
         })
       }
       </div>
       );
-  
+      
     }
   }
   

@@ -109,6 +109,10 @@ html, body{
 	background: #fff;
 }
 
+#board .cell.active{
+	background: #797;	
+}
+
 #board .cell.darkbackground {
   background: #333;
 }

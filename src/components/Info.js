@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Info() {
+function Info(props) {
   
   return (
     <div id="data">
       <div className="dataTitle">
-        <h3 className="position">E-1</h3><h1>Pawn </h1>
+        <h3 className="position">{props.position}</h3><h1>Pawn </h1>
       </div>
       <p>Acá abajo va bastante más información, sobre por ejemplo, porque sirve este personaje.</p>
       <div id="subData">

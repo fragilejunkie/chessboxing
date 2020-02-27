@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Notifications from './Notifications';
 import Board from './Board';
 import Info from './Info';
 
-function Chess() {
+class Chess extends Component {
+  state = {
+    position : null
+  }
+
+  handleClick = (e) => {
+    const boardCell = e.target.id;
+    this.setState({position : e.target.id})
+    console.log(this.state.position)
+  }
+
+  render() {
     return (
-    <div id="content">
-      <Info />
-      <Board />
+      <div id="content">
+      <Info  position={this.state.position}/>
+      <Board handleClick={this.handleClick} />
       <Notifications />
-    </div>
-    );
-}
+      </div>
+      );
+      
+    }
+  }
 
 export default Chess;
