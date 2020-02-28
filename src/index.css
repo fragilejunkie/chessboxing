@@ -113,11 +113,6 @@ html, body{
 }
 
 #board .cell.active{
-	background: #797;	
-}
-
-#board .cell.darkbackground {
-  background: #333;
 }
 
 #board .cell[id^="A"]:nth-child(2n+1), #board .cell[id^="C"]:nth-child(2n+1), #board .cell[id^="E"]:nth-child(2n+1), #board .cell[id^="G"]:nth-child(2n+1) {
@@ -128,16 +123,16 @@ html, body{
   background: #333;
 }
 
+#board .cell.active, #board .cell[id^="A"]:nth-child(2n+1).active, #board .cell[id^="C"]:nth-child(2n+1).active, #board .cell[id^="E"]:nth-child(2n+1).active, #board .cell[id^="G"]:nth-child(2n+1).active, #board .cell[id^="B"]:nth-child(2n+0).active, #board .cell[id^="D"]:nth-child(2n+0).active, #board .cell[id^="F"]:nth-child(2n+0).active, #board .cell[id^="H"]:nth-child(2n+0).active {
+	background: #797;
+}
+
 #board .cell:hover, #board .cell[id^="A"]:nth-child(2n+1):hover, #board .cell[id^="C"]:nth-child(2n+1):hover, #board .cell[id^="E"]:nth-child(2n+1):hover, #board .cell[id^="G"]:nth-child(2n+1):hover, #board .cell[id^="B"]:nth-child(2n+0):hover, #board .cell[id^="D"]:nth-child(2n+0):hover, #board .cell[id^="F"]:nth-child(2n+0):hover, #board .cell[id^="H"]:nth-child(2n+0):hover {
 	transition: 0s all ease-out;
 	background: #F70;
 	cursor: pointer;
 }
 
-#board li.active{
-	background: #97F;
-	transition: 0.3s all ease-in;
-}
 
 #ui{
 	background: #797;
